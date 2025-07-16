@@ -1,0 +1,204 @@
+/* === GLOBAL STYLES === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  color: #854836;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* === HERO SECTION === */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('https://images.unsplash.com/photo-1627800832064-6e8f3e7b5987?auto=format&fit=crop&w=1600&q=80')
+              center/cover no-repeat fixed;
+  padding: 6rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero .btn-primary {
+  background-color: #FFB22C;
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.hero .btn-primary:hover {
+  background-color: #854836;
+  color: #fff;
+}
+
+/* === ABOUT SECTION === */
+#about {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+#about h5 {
+  color: #000;
+  margin-top: 1rem;
+}
+
+/* === PRODUCTS SECTION === */
+#products {
+  padding: 4rem 0;
+}
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #854836;
+  font-weight: 600;
+}
+
+/* === REVIEWS SECTION === */
+#reviews {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+#reviews img {
+  border: 3px solid #FFB22C;
+}
+
+.carousel-item p {
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  font-style: italic;
+}
+
+.text-warning {
+  font-size: 1.25rem;
+}
+
+/* === CONTACT SECTION === */
+#contact {
+  background-color: #fefefe;
+  padding: 4rem 0;
+}
+
+#contact form .form-control {
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+#contact form .btn-primary {
+  background-color: #FFB22C;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+
+#contact form .btn-primary:hover {
+  background-color: #854836;
+  color: #fff;
+}
+
+#contact a {
+  color: #854836;
+}
+
+#contact h5,
+#contact h6 {
+  color: #854836;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  #contact .col-md-6 {
+    margin-bottom: 2rem;
+  }
+}
+ 
+/* === FOOTER === */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+  color: #ccc;
+}
+
+/* === CHATBOT PLACEHOLDER === */
+#tawk-chat {
+  background-color: #f4f4f4;
+  border: 2px dashed #FFB22C;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+#tawk-chat:hover {
+  background-color: #fffbe7;
+  border-color: #854836;
+  color: #000;
+}
+/* === NAVBAR === */
+.navbar {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #FFB22C !important;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #FFB22C;
+}
